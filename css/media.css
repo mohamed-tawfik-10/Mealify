@@ -1,0 +1,106 @@
+/* الريسبونسيف */
+@media (max-width: 768px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburger {
+        display: flex;
+        padding-left: 120px;
+    }
+
+    .navbar-2 {
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-2 ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .navbar-2.active {
+        display: block;
+    }
+
+    .dark-toggle {
+        margin-left: auto;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .Home .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .home1,
+    .home2 {
+        width: 100%;
+    }
+
+    .home1 h2 {
+        font-size: 28px;
+    }
+
+    .home1 p {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .homelink {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        margin: 30px 0;
+    }
+
+    .homelink .a1,
+    .homelink .a2 {
+        margin: 0;
+        padding: 12px 25px;
+        width: fit-content;
+    }
+
+    .home2 img {
+        max-width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .chefsinfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chefsinfo .chefspic {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .chefspic:hover {
+        transform: none;
+    }
+
+}
+
+/* ريسبونسيف */
+@media (max-width: 768px) {
+    .contactus1 {
+        width: 100%;
+    }
+
+    .contactcontainer .in1, .contactcontainer .in2, .contactcontainer .in3, .contactcontainer .in4 {
+        width: 100%;
+    }
+
+    .contactcontainer .in5 {
+        width: 100%;
+    }
+}

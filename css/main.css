@@ -1,0 +1,706 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* الوضع العادي */
+body {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* الوضع الداكن */
+body.dark-mode {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .navbar-2 a {
+    color: #f2f2f2;
+}
+
+body.dark-mode .navbar-2 a.active,
+body.dark-mode .navbar-2 a:hover {
+    color: #ff5252;
+}
+
+.dark-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    margin-left: 15px;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar-1 p {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar-2 ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar-2 a:hover,
+.navbar-2 a.active {
+    color: #f44336;
+}
+
+.dark-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* زر الهامبورجر */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+}
+
+/* الريسبونسيف */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: flex;
+        padding-left: 120px;
+    }
+
+    .navbar-2 {
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-2 ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .navbar-2.active {
+        display: block;
+    }
+
+    .dark-toggle {
+        margin-left: auto;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+/* بدايه ال Home */
+
+.Home {
+    background-color: #f1f1f1;
+    margin-top: 82px;
+}
+
+.Home .container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.home1 {
+    width: 40%;
+}
+
+.home1 h2 {
+    color: var(--color-secondary);
+    font-family: "Amatic SC", sans-serif;
+    font-size: 35px;
+}
+
+.home1 p {
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-block: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4f4f5a;
+}
+
+.homelink {
+    margin: 40px 0px;
+}
+
+.homelink .a1 {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 15px 25px;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.homelink .a2 {
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    color: black;
+    margin-left: 30px;
+}
+
+.home2 {
+    width: 40%;
+}
+
+.home2 img {
+    width: 100%;
+}
+
+.homelink:hover .a2 {
+    color: red;
+}
+
+/* Dark Mode styles */
+body.dark-mode .Home h2 {
+    color: black;
+}
+
+
+
+/* بدتيه ال Chefs */
+.chefs {
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.chefs .container {
+    margin: auto;
+    text-align: center;
+}
+
+.chefs .container h2:not(.h2) {
+    color: rgb(127, 127, 144);
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.chefs .container span {
+    color: rgb(206, 18, 18);
+}
+
+.chefs .container p:not(.p) {
+    color: rgb(32, 32, 49);
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.chefsinfo {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding-top: 25px;
+}
+
+.chefsinfo .chefspic {
+    width: 31%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.chefsinfo .chefspic h2 {
+    font-family: Inter, sans-serif;
+    font-size: 19px;
+    color: rgb(33, 37, 41);
+
+}
+
+
+.chefspic p {
+    font-size: 15px;
+    color: rgb(127, 127, 144);
+}
+
+.chefspic img {
+    width: 100%;
+}
+
+.chefspic .icons {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff4d;
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    transform: translateX(130%);
+    transition: transform 1s;
+    border-radius: 5px;
+}
+
+.chefspic:hover .icons {
+    transform: translateX(0%);
+}
+
+.chefspic .icons a {
+    color: #333;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.chefspic .icons a:hover {
+    color: #e74c3c;
+    background-color: white;
+    border-radius: 50%;
+    transform: scale(1.2);
+}
+
+
+/* بدايه ال Gallry */
+.Gallary h2:not(.h2) {
+    color: rgb(127, 127, 144);
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    max-width: auto;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.Gallary span {
+    color: rgb(206, 18, 18);
+}
+
+.Gallary p:not(.p) {
+    color: rgb(32, 32, 49);
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+
+
+
+.Gallryphtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+
+}
+
+.photos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo1 {
+    width: 100%;
+}
+
+.photo1 .imggg {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.photo1 .imggg img {
+    width: 100%;
+    display: block;
+}
+
+/* محتوى الهوفر */
+.photo1 .imggg .immgcontent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* توسيط عمودي */
+    align-items: center;
+    /* توسيط أفقي */
+    text-align: center;
+    padding: 20px;
+}
+
+.cc:hover .immgcontent {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.immgcontent h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: Inter, sans-serif;
+    color: #fff;
+}
+
+.immgcontent p {
+    font-size: 16px;
+    max-width: 90%;
+    color: #eee;
+    line-height: 1.4;
+}
+
+/* بدايه ال contact */
+
+.contact {
+    text-align: center;
+    padding-top: 90px;
+    width: 95%;
+    margin: auto;
+}
+
+.contact h2:not(.h2) {
+    color: rgb(127, 127, 144);
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.contact span {
+    color: rgb(206, 18, 18);
+}
+
+.contact p:not(.p) {
+    color: rgb(32, 32, 49);
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.contactus {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.contactus1 {
+    width: 48%;
+    background-color: #f4f4f9;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.contactus1 .left {
+    padding-right: 15px;
+}
+
+.contactus1 .left i {
+    font-size: 30px;
+    color: #ff6f61; /* تغير اللون */
+}
+
+.contactus1 .left h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.contactus1 .left p {
+    color: #555;
+}
+
+.contactcontainer {
+    padding: 20px;
+    width: 100%;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.contactcontainer input,
+.contactcontainer button {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.contactcontainer .in1, .contactcontainer .in3, .contactcontainer .in4 {
+    width: 100%;
+}
+
+.contactcontainer .in5 {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contactcontainer .in5:hover {
+    background-color: #ff5c50;
+}
+
+/* بدايه ال mealift */
+
+
+/* تحسين الألوان والتصميم */
+.mealify {
+    margin-top: 50px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #2c2f3b; /* خلفية داكنة جديدة */
+}
+
+.mwel {
+    width: 95%;
+    margin: auto;
+}
+
+.mwel .subbbbb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mealify .mealifysocial {
+    width: 48%; /* تغيير عرض القسم */
+    padding: 15px;
+    background-color: #333; /* لون الخلفية */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mealifysocial .pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mealifysocial .pic i {
+    font-size: 40px;
+    color: #ff6f61; /* لون الأيقونات */
+    margin-right: 10px;
+}
+
+.mealifysocial .pic h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.mealifysocial .pic2 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.mealifysocial .pic2 p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.mealifysocial .pic3 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.mealifysocial .pic3 i {
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mealifysocial .pic3 i:hover {
+    color: #ff6f61;
+}
+
+.mealifygets {
+    width: 48%; /* تغيير عرض القسم */
+    padding: 15px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mealifygets h2 {
+    padding-top: 20px;
+    color: #fff;
+}
+
+.mealifygets .get {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.mealifygets .get i {
+    font-size: 30px;
+    color: #ff6f61;
+    margin-right: 15px;
+}
+
+.mealifygets .get p {
+    color: #ddd;
+    font-size: 16px;
+}
+
+.mealifysub {
+    width: 100%;
+    text-align: start;
+    margin-top: 40px;
+}
+
+.mealifysub h2 {
+    color: #ff6f61;
+    font-size: 26px;
+}
+
+.mealifysub .subinput {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.mealifysub .subinput .in8 {
+    width: 80%;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.mealifysub .subinput .in9 {
+    width: 20%;
+    height: 40px;
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.mealifysub .subinput .in9:hover {
+    background-color: #e75f54;
+}
+
+.quick {
+    width: 100%;
+    text-align: start;
+    margin-top: 40px;
+}
+
+.quick .contenar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.quick .q1 {
+    width: 48%;
+    padding-top: 10px;
+}
+
+.quick .q1 p {
+    display: inline;
+    padding-right: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.q1:hover {
+    background-color: #4f4f5a;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
